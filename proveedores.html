@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proveedores - Pedidos Milan</title>
+
+    <!-- ICONO DE LA PESTAÑA -->
+    <link rel="icon" href="logo-encabezado.png">
+
+    <!-- DISEÑO -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- CABECERA -->
+
+    <header>
+
+        <img
+            src="Talleres-Milan_logotipo_Milan-Port-Equipment_1-scaled-1-1024x316.jpg"
+            class="logo"
+            alt="Logo Milan">
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+
+        <!-- TÍTULO -->
+
+        <div class="titulo">
+
+            <h1>GESTIÓN DE PROVEEDORES</h1>
+
+            <p>Gestiona los proveedores de Milan</p>
+
+        </div>
+
+
+        <!-- BOTONES -->
+
+        <div class="botones">
+
+            <button
+                id="volverProductos"
+                class="btn btn-secundario">
+
+                ← Volver a productos
+
+            </button>
+
+
+            <button
+                id="nuevoProveedor"
+                class="btn btn-principal">
+
+                + Añadir proveedor
+
+            </button>
+
+        </div>
+
+
+        <!-- TABLA DE PROVEEDORES -->
+
+        <div class="tabla-contenedor">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Proveedor</th>
+
+                        <th>Email</th>
+
+                        <th>Editar</th>
+
+                        <th>Eliminar</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tablaProveedores">
+
+                    <!-- Los proveedores aparecerán aquí -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="app.js"></script>
+
+<script>
+
+    document.getElementById("volverProductos").addEventListener("click", function() {
+
+        window.location.href = "index.html";
+
+    });
+
+</script>
+</body>
+
+</html>

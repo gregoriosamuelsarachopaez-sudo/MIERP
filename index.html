@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedidos Milan</title>
+
+    <link rel="icon" href="logo-encabezado.png">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- CABECERA -->
+
+    <header>
+
+        <img
+            src="Talleres-Milan_logotipo_Milan-Port-Equipment_1-scaled-1-1024x316.jpg"
+            class="logo"
+            alt="Logo Milan">
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+        <div class="titulo">
+
+            <h1>PEDIDOS MILAN</h1>
+
+            <p>Gestión de productos y pedidos</p>
+
+        </div>
+
+
+        <!-- BOTONES -->
+
+        <div class="botones">
+
+            <button
+                id="nuevoProducto"
+                class="btn btn-principal">
+
+                + Añadir producto
+
+            </button>
+
+
+            <button
+                id="gestionarProveedores"
+                class="btn btn-secundario">
+
+                🏭 Gestionar proveedores
+
+            </button>
+
+        </div>
+
+
+        <!-- TABLA DE PRODUCTOS -->
+
+        <div class="tabla-contenedor">
+
+            <table id="tablaProductos">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Producto</th>
+
+                        <th>Unidades</th>
+
+                        <th>Editar</th>
+
+                        <th>Eliminar</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="cuerpoProductos">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+    <!-- ============================= -->
+    <!-- VENTANA AÑADIR PRODUCTO -->
+    <!-- ============================= -->
+
+    <div
+        id="ventanaProducto"
+        class="ventana-producto">
+
+        <div class="contenido-ventana">
+
+            <h2>Nuevo producto</h2>
+
+
+            <!-- NOMBRE DEL PRODUCTO -->
+
+            <label>
+                Nombre del producto
+            </label>
+
+            <input
+                type="text"
+                id="nombreProducto"
+                placeholder="Ej. Producto">
+
+
+            <!-- PROVEEDORES -->
+
+            <label>
+                Proveedores
+            </label>
+
+
+            <!-- BUSCADOR -->
+
+            <input
+                type="text"
+                id="buscarProveedor"
+                placeholder="🔎 Buscar proveedor...">
+
+
+            <!-- LISTA DE PROVEEDORES -->
+
+            <div
+                id="listaProveedores"
+                class="lista-proveedores">
+            </div>
+
+
+            <!-- BOTONES -->
+
+            <div class="botones-ventana">
+
+                <button
+                    id="cancelarProducto"
+                    class="btn btn-secundario">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    id="guardarProducto"
+                    class="btn btn-principal">
+
+                    Guardar producto
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
